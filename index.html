@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>브랜드 트렌드 리포트 2026-05-29</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --accent: #5038b4;
+    --accent-light: #f0eeff;
+    --dark: #16112e;
+    --body: #383648;
+    --gray: #6b6a7a;
+    --border: #e2e0f0;
+    --white: #ffffff;
+  }
+
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background: #f7f6fb;
+    color: var(--body);
+    line-height: 1.75;
+    font-size: 15px;
+  }
+
+  /* ── 헤더 ── */
+  .hero {
+    background: var(--dark);
+    padding: 64px 24px 56px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 5px;
+    background: var(--accent);
+  }
+  .hero-label {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #9b96c4;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .hero-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 12px;
+  }
+  .hero-sub {
+    font-size: 14px;
+    color: #6e6a9a;
+    margin-bottom: 24px;
+  }
+  .hero-date {
+    display: inline-block;
+    background: rgba(255,255,255,0.08);
+    color: #c4bfdf;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 6px 18px;
+    border-radius: 20px;
+  }
+
+  /* ── 레이아웃 ── */
+  .container {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+
+  /* ── 섹션 ── */
+  .section {
+    background: var(--white);
+    border-radius: 14px;
+    padding: 32px 32px 28px;
+    margin-bottom: 24px;
+    border: 1px solid var(--border);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .section-emoji {
+    font-size: 22px;
+    line-height: 1;
+  }
+  .section-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--dark);
+  }
+
+  /* ── 콜아웃 (핵심 요약) ── */
+  .callout {
+    background: var(--accent-light);
+    border-left: 4px solid var(--accent);
+    border-radius: 8px;
+    padding: 18px 20px;
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--body);
+  }
+
+  /* ── 키워드 태그 ── */
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .tag {
+    background: var(--accent-light);
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 700;
+    padding: 6px 14px;
+    border-radius: 20px;
+  }
+
+  /* ── 브랜드 카드 ── */
+  .brand-card {
+    border-top: 1px solid var(--border);
+    padding: 20px 0 4px;
+  }
+  .brand-card:first-child { border-top: none; padding-top: 0; }
+  .brand-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+  .brand-card p {
+    font-size: 14px;
+    line-height: 1.75;
+    color: var(--body);
+  }
+
+  /* ── 본문 ── */
+  .body-text {
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--body);
+  }
+
+  /* ── 추천 리스트 ── */
+  .rec-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .rec-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  .rec-num {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    background: var(--accent);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+  }
+
+  /* ── 다음 주 콜아웃 ── */
+  .callout-dark {
+    background: var(--dark);
+    border-radius: 8px;
+    padding: 18px 20px;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #c4bfdf;
+  }
+
+  /* ── 푸터 ── */
+  .footer {
+    text-align: center;
+    font-size: 12px;
+    color: var(--gray);
+    padding: 24px;
+  }
+
+  @media (max-width: 600px) {
+    .hero-title { font-size: 24px; }
+    .section { padding: 24px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-label">Athleisure Weekly Report</div>
+  <h1 class="hero-title">브랜드 트렌드 리포트</h1>
+  <div class="hero-sub">무신사 · 29cm · 브랜드 홈페이지</div>
+  <div class="hero-date">📅 2026-05-29</div>
+</header>
+
+<main class="container">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-emoji">📊</span>
+      <span class="section-title">이번 주 핵심 요약</span>
+    </div>
+    <div class="callout">이번 주 국내 애슬레저 시장은 본격적인 여름 시즌을 앞두고 신제품 출시와 공격적인 프로모션이 두드러집니다. 안다르는 '풀앤비치' 컬렉션으로 가족 단위 고객과 운동별 스타일링에 집중하고, 뮬라웨어는 기능성 숏슬리브 신제품과 함께 최대 70% 이상의 파격 할인을 제공하며 판매를 가속화하고 있습니다. 두 브랜드 모두 카카오 채널 및 앱 설치를 통한 즉시 할인 혜택으로 고객 유입을 적극적으로 유도하고 있습니다.</div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-emoji">🔑</span>
+      <span class="section-title">이번 주 트렌드 키워드</span>
+    </div>
+    <div class="tags"><span class="tag">여름/비치</span><span class="tag">가족</span><span class="tag">세트/묶음</span><span class="tag">할인/혜택</span><span class="tag">숏슬리브</span></div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-emoji">👗</span>
+      <span class="section-title">브랜드별 마케팅 동향</span>
+    </div>
+    
+        <div class="brand-card">
+            <h3 class="brand-name">안다르</h3>
+            <p>집중적으로 여름 '풀앤비치' 컬렉션을 신제품으로 출시하며 가족 단위 고객과 활동별 스타일링을 제안합니다. 카카오 채널 추가 1만원 할인 및 다양한 세트(SET, 1&1, 3 SET) 프로모션으로 구매를 유도하고 있습니다.</p>
+        </div>
+        <div class="brand-card">
+            <h3 class="brand-name">뮬라웨어</h3>
+            <p>'컴포트 숏슬리브' 등 기능성 신제품과 남성 라인업을 강화하고 있습니다. 최대 70-76%에 달하는 파격적인 할인율과 묶음(3PACK) 판매를 통해 판매량을 늘리며, 앱 푸시 및 카톡 채널 할인 혜택으로 고객 유입을 확대하고 있습니다. 공식 인증 판매처 구매 강조는 브랜드 신뢰도 관리 차원으로 보입니다.</p>
+        </div>
+        <div class="brand-card">
+            <h3 class="brand-name">젝시믹스</h3>
+            <p>제공된 데이터에 특이사항이나 신제품, 프로모션 정보가 없어 이번 주 마케팅 방향성은 파악하기 어렵습니다.</p>
+        </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-emoji">📱</span>
+      <span class="section-title">콘텐츠 포맷 트렌드</span>
+    </div>
+    <p class="body-text">브랜드들은 '풀앤비치'와 같은 명확한 시즌 테마 컬렉션을 전면에 내세우며, '운동별 추천' 및 '스타일링 제안'으로 활용도를 강조하는 콘텐츠를 선보이고 있습니다. 또한, [SET], [1&1], [3 PACK] 등 묶음 상품 구성을 통해 가성비를 어필하는 것이 현재 효과적인 포맷으로 보입니다.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-emoji">💰</span>
+      <span class="section-title">가격대 포지셔닝 흐름</span>
+    </div>
+    <p class="body-text">전반적으로 여름 시즌을 앞두고 신상품과 함께 강력한 할인 프로모션을 동시에 진행하는 양상을 보입니다. 뮬라웨어의 최대 76% 할인과 안다르의 다양한 묶음(SET) 가격 제안은 고객의 가격 민감도를 고려한 공격적인 가격 포지셔닝 전략으로 분석됩니다.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-emoji">💡</span>
+      <span class="section-title">이번 주 콘텐츠 주제 추천</span>
+    </div>
+    <ol class="rec-list"><li><span class="rec-num">1</span>추천 콘텐츠 주제 1: '우리 가족 여름 휴가룩 완성! 안다르 풀앤비치 패밀리 스타일링 가이드' - 안다르의 패밀리 그래픽 티셔츠 신제품과 풀앤비치 컬렉션을 활용해 가족 단위 고객에게 어필할 수 있는 여름 휴가 콘셉트의 스타일링 콘텐츠.</li><li><span class="rec-num">2</span>추천 콘텐츠 주제 2: '땀 걱정 NO! 뮬라웨어 컴포트/커버업 숏슬리브로 시원한 여름 운동!' - 뮬라웨어의 신제품 숏슬리브의 기능성(패드형, 커버업)과 여름철 운동 시의 편안함을 집중적으로 조명하여 제품의 가치를 높이는 콘텐츠.</li><li><span class="rec-num">3</span>추천 콘텐츠 주제 3: '가장 사랑받는 안다르 베스트템, 똑똑하게 득템하는 SET 활용법' - 안다르의 '가장 사랑받는 베스트 아이템'과 [SET], [1&1], [3 SET] 프로모션을 연계하여, 고객들이 어떤 조합으로 구매해야 가장 큰 혜택을 얻을 수 있는지 제안하는 구매 가이드 콘텐츠.</li><li><span class="rec-num">4</span>추천 콘텐츠 주제 4: '클릭 한 번으로 5천원/1만원 할인! 놓치지 마세요, 애슬레저 앱/카톡 채널 혜택' - 안다르와 뮬라웨어 모두 강조하는 앱 푸시/카톡 채널 할인 혜택을 통합하여 고객의 즉각적인 참여와 구매를 유도하는 숏폼 또는 이벤트성 콘텐츠.</li><li><span class="rec-num">5</span>추천 콘텐츠 주제 5: '여름 맞이 운동복, 고민 끝! 내 운동에 딱 맞는 애슬레저 추천 코디' - 안다르의 '운동별 추천' 문구를 기반으로 요가, 러닝, 필라테스 등 여름철 인기 운동에 맞춰 브랜드 제품들을 조합한 구체적인 코디를 제안하는 콘텐츠.</li></ol>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-emoji">👀</span>
+      <span class="section-title">다음 주 주목할 것</span>
+    </div>
+    <div class="callout-dark">다음 주에는 본격적인 여름 시즌을 앞두고 추가적인 여름 컬렉션 출시와 함께 현재 진행 중인 대규모 할인 프로모션의 확산 또는 변화 양상에 주목해야 합니다. 젝시믹스의 여름 관련 움직임도 예의주시할 필요가 있습니다.</div>
+  </div>
+
+</main>
+
+<footer class="footer">
+  자동 생성된 리포트입니다 · 2026-05-29
+</footer>
+
+</body>
+</html>
