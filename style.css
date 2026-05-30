@@ -194,22 +194,10 @@ section {
   min-height: calc(100vh - 34px);
 }
 .contents-photo {
-  background: #B8A5E8;
+  background: #B8A5E8 url('main-pc.jpg') center center / cover no-repeat;
   min-height: 500px;
   position: relative;
   overflow: hidden;
-}
-.contents-photo::after {
-  content: 'PHOTO';
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 14px;
-  letter-spacing: 3px;
-  color: rgba(0,0,0,0.15);
 }
 .contents-text {
   padding: 60px 8%;
